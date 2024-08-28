@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <suite-files>
+        <suite-file path="testNG_LoginScenarios_FirstName.xml"/>
+        <suite-file path="testNG_LoginScenarios_LastName.xml"/>
+        <suite-file path="testNG_LoginScenarios_Email.xml"/>
+        <suite-file path="testNG_LoginScenarios_Password.xml"/>
+        <suite-file path="testNG_LoginScenarios_ConfirmPassword.xml"/>
+
+    </suite-files>
+
+</suite>

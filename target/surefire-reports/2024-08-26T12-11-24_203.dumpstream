@@ -1,0 +1,5 @@
+# Created at 2024-08-26T12:11:25.975
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Work\Freelance Tasks\Qwizeen -Sara Saad\QwizeenAutomationProjectRepo\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Email Test Suite" >
+	<test name="test login --Registration-15-- Verify that user cannot enter empty Email" >
+		<classes>
+			<class name="LoginPage.loginPageEmailTests" >
+			<methods>
+				<include name= "testLogin_Email_Empty"/>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="test login --Registration-16-- Verify that user can enter Email with valid Format [ example@example.com ] " >
+		<classes>
+			<class name="LoginPage.loginPageEmailTests" >
+				<methods>
+					<include name= "testLogin_Email_AcceptsOnlyValidFormat"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test login --Registration-18-- Verify that user cannot enter with InValid Format without @ : [ QwizeenUser.com ] " >
+		<classes>
+			<class name="LoginPage.loginPageEmailTests" >
+				<methods>
+					<include name= "testLogin_Email_InValidFormat_withoutAT"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test login --Registration-18-- Verify that user cannot enter with InValid Format without domain : [ QwizeenUser@example ]" >
+		<classes>
+			<class name="LoginPage.loginPageEmailTests" >
+				<methods>
+					<include name= "testLogin_Email_InValidFormat_withoutDomain"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+</suite>
+<!--                                                                    -->

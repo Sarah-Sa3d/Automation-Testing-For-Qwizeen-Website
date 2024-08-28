@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="LoginPage.loginPageConfirmPasswordTests">
+        <methods>
+          <include name="testLogin_ConfirmPassword_NotMatchPassword"/>
+          <include name="defineSuite"/>
+          <include name="RecordFailures"/>
+          <include name="testLogin_ConfirmPassword_Empty"/>
+          <include name="setupDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- LoginPage.loginPageConfirmPasswordTests -->
+      <class name="LoginPage.loginPagePasswordTests">
+        <methods>
+          <include name="defineSuite"/>
+          <include name="testLogin_Password_Empty"/>
+          <include name="RecordFailures"/>
+          <include name="setupDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- LoginPage.loginPagePasswordTests -->
+      <class name="LoginPage.loginPageFirstNameTests">
+        <methods>
+          <include name="defineSuite"/>
+          <include name="testLogin_FirstName_InvalidCharacters"/>
+          <include name="testLogin_FirstName_less_minimum_length_3char"/>
+          <include name="testLogin_FirstName_acceptsOnlyChars"/>
+          <include name="RecordFailures"/>
+          <include name="testLogin_FirstName_equal_minimum_length_2char"/>
+          <include name="testLogin_FirstName_less_minimum_length_1char"/>
+          <include name="setupDriver"/>
+          <include name="testLogin_FirstName_Empty"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- LoginPage.loginPageFirstNameTests -->
+      <class name="base.BaseTests">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- base.BaseTests -->
+      <class name="LoginPage.loginPageEmailTests">
+        <methods>
+          <include name="testLogin_Email_Empty"/>
+          <include name="defineSuite"/>
+          <include name="testLogin_Email_AcceptsOnlyValidFormat"/>
+          <include name="RecordFailures"/>
+          <include name="testLogin_Email_InValidFormat_withoutAT"/>
+          <include name="setupDriver"/>
+          <include name="tearDown"/>
+          <include name="testLogin_Email_InValidFormat_withoutDomain"/>
+        </methods>
+      </class> <!-- LoginPage.loginPageEmailTests -->
+      <class name="LoginPage.loginPageLastNameTests">
+        <methods>
+          <include name="defineSuite"/>
+          <include name="testLogin_LastName_less_minimum_length_3char"/>
+          <include name="testLogin_LastName_acceptsOnlyChars"/>
+          <include name="testLogin_LastName_less_minimum_length_2char"/>
+          <include name="RecordFailures"/>
+          <include name="testLogin_LastName_less_minimum_length_1char"/>
+          <include name="testLogin_LastName_Empty"/>
+          <include name="setupDriver"/>
+          <include name="tearDown"/>
+          <include name="testLogin_LastName_InvalidCharacters"/>
+        </methods>
+      </class> <!-- LoginPage.loginPageLastNameTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

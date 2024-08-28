@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FirstName Test Suite" >
+	<test name="test login --Registration-01-- Verify that first name field is required can`t be empty" >
+		<classes>
+			<class name="LoginPage.loginPageFirstNameTests" >
+			<methods>
+				<include name= "testLogin_FirstName_Empty"/>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="test login --Registration-02-- Verify that user can enter first name with valid length characters" >
+		<classes>
+			<class name="LoginPage.loginPageFirstNameTests" >
+				<methods>
+					<include name= "testLogin_FirstName_acceptsOnlyChars"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test login --Registration-03-- Verify that the first name cannot accept invalid characters [special characters, numbers, etc.]" >
+		<classes>
+			<class name="LoginPage.loginPageFirstNameTests" >
+				<methods>
+					<include name= "testLogin_FirstName_InvalidCharacters"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test login --Registration-05-- Verify that user cannot enter first name with minimum length 1 characters" >
+		<classes>
+			<class name="LoginPage.loginPageFirstNameTests" >
+				<methods>
+					<include name= "testLogin_FirstName_less_minimum_length_1char"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test login --Registration-05-- Verify that user can enter first name with minimum length 2 characters" >
+		<classes>
+			<class name="LoginPage.loginPageFirstNameTests" >
+				<methods>
+					<include name= "testLogin_FirstName_less_minimum_length_2char"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="test login --Registration-05-- Verify that user can enter first name with length 3 characters" >
+		<classes>
+			<class name="LoginPage.loginPageFirstNameTests" >
+				<methods>
+					<include name= "testLogin_FirstName_less_minimum_length_3char"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
+<!--                                                                    -->

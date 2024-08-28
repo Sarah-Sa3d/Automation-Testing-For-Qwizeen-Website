@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LastName Test Suite" >
+	<test name="test login --Registration-06-- Verify that last name field is required can`t be empty" >
+		<classes>
+			<class name="LoginPage.loginPageLastNameTests" >
+			<methods>
+				<include name= "testLogin_LastName_Empty"/>
+			</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="test login --Registration-07-- Verify that user can enter last name with valid length characters" >
+		<classes>
+			<class name="LoginPage.loginPageLastNameTests" >
+				<methods>
+					<include name= "testLogin_LastName_acceptsOnlyChars"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test login --Registration-08-- Verify that the last name cannot accept invalid characters [special characters, numbers, etc.]" >
+		<classes>
+			<class name="LoginPage.loginPageLastNameTests" >
+				<methods>
+					<include name= "testLogin_LastName_InvalidCharacters"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test login --Registration-10-- Verify that user cannot enter last name with minimum length 1 characters" >
+		<classes>
+			<class name="LoginPage.loginPageLastNameTests" >
+				<methods>
+					<include name= "testLogin_LastName_less_minimum_length_1char"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="test login --Registration-10-- Verify that user can enter last name with minimum length 2 characters" >
+		<classes>
+			<class name="LoginPage.loginPageLastNameTests" >
+				<methods>
+					<include name= "testLogin_LastName_less_minimum_length_2char"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="test login --Registration-10-- Verify that user can enter last name with length 3 characters" >
+		<classes>
+			<class name="LoginPage.loginPageLastNameTests" >
+				<methods>
+					<include name= "testLogin_LastName_less_minimum_length_3char"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
+<!--                                                                    -->
